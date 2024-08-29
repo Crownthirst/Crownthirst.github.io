@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adewunmi Oluwaseun Asegun</title>
+    <meta name="description" content="I enjoy Data Storytelling, Analysis & Data Cleaning. Have fun exploring.">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e4b62e9bd6.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="Crown.jpeg" type="image/png">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/Logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#dashboards">Dashboards</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Oluwaseun</span><br>I bend data for a living.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/User.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As an analyst I have passion for transforming complex data into actionable insight, through the
+                        expertise I have developed in data management, data cleaning, analysis and visualization
+                        overtime. My analytical approach is characterized by rigorous attention to detail, dedication to
+                        correctness and aptitude for seeing patterns and trends that others might miss. For me
+                        communication is not a barrier, translating technical information into a language that
+                        stakeholders can understand is one thing i am very good at.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data</span><br>Data Cleaning/Preparation <br>Statistical Analysis <br>Data
+                                Modelling</li>
+                            <li><span>Communication</span><br>Data Visualization <br>Report Writing</li>
+                            <li><span>Tools</span><br>Python<br>R<br>Excel<br>Power BI/Tableau<br>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022</span><br>Data Enumeration, KPMG</li>
+                            <li><span>2021</span><br>Data Enumeration, TETFUND</li>
+                            <li><span>2020</span><br>Data Analytics Consulting Virtual Internship, KPMG</li>
+                            <li><span>2019</span><br>Administrative Intern, NIGERIA AGIP OIL COMPANY</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>UNIVERSITY OF LAGOS- B.SC, Employment Relations and Human Resource
+                                Management</li>
+                            <li><span>September 2022</span><br>UDACITY- Nano Degree, Data Analytics</li>
+                            <li><span>July 2022</span><br>COURSERA- Google Data analytics, Data analytics</li>
+                            <li><span>2018</span><br>YABA COLLEGE OF TECHNOLOGY- National Diploma, Accounting</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-broom"></i>
+                    <h2>Data Cleaning / Preparation</h2>
+                    <p> Dirty data is bad for business, without clean data you run the risk of drawing wrong
+                        conclusions, I'd be more than happy getting my hands dirty tidying up your data.</p>
+                    <a href="https://medium.com/@Crownthirst/data-cleaning-and-why-it-is-important-fe758cc32b5b">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Statistical Analysis</h2>
+                    <p> Do you need to make sense of a dataset but don't know where to begin? I can assist you in making
+                        data-driven decisions that will offer you a competitive edge, whether you're wanting to evaluate
+                        consumer behavior, test the efficacy of a marketing campaign, or investigate the impact of a new
+                        product.
+                    </p>
+                    <a href="https://medium.com/@Crownthirst/the-science-of-making-sense-c59b91be7c50">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <h2>Data Visualization</h2>
+                    <p> "How well we communicate is determinded not by how well we say things but how well we are
+                        understood" - Andrew Grove<br>My data visualization service involves converting your data into
+                        interesting, interactive visualizations that emphasize critical findings and convey a narrative.
+                    </p>
+                    <a href="https://medium.com/@Crownthirst/from-numbers-to-narrative-67da667bb28f">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/ratedogs.png">
+                    <div class="layer">
+                        <h3> Twitter API Query using Tweepy</h3>
+                        <p> Data Wrangling and EDA with python.<br>Pulled data from various sources including twitter, assessed the data's
+                            quality and tidiness issues, explored the dataset before finally presenting findings </p>
+                        <a href="https://github.com/Crownthirst/Data_Wrangling-WeRateDogs"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/bellabeat.png">
+                    <div class="layer">
+                        <h3>Exploratory Data analysis and visualization with R.</h3>
+                        <p>Bellabeat Fitness Tracker<br> Analyzed smart device usage data to
+                            gain insight into consumer behavior, uncover patterns and help guide companies marketing
+                            strategy.</p>
+                        <a href="https://github.com/Crownthirst/Bellabeat_Fitness"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Waiting.png">
+                    <div class="layer">
+                        <h3>Queueing model using Microsoft Excel</h3>
+                        <p>Waiting in Line<br> The M/M/S model was built to help a
+                            business analyze it's performance. The business sought to understand customer behavior
+                            during peak and quiet times to gain useful insights to scheduling their cashiers, also to reduce
+                            wait time, and increase customer satisfaction.</p>
+                        <a href="https://github.com/Crownthirst/Queueing-Model"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Crownthirst" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- --------------dashboards---------- -->
+    <div id="dashboards">
+        <div class="container">
+            <h1 class="sub-title">My Visualizations</h1>
+            <div class="dashboard-list">
+                <div class="dashboard">
+                    <img src="images/Attrition.png">
+                </div>
+                <div class="dashboard">
+                    <img src="images/WeActuallyRateDogs.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>Asegunvic@yahoo.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+234 909 5632 989</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/Adewunmioluwaseunasegun/"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/CrownThirst"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/crownthirst/"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/adewunmioluwaseun/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Oluwaseunadewunmi.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Crownthirst. 2023</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0"
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzb76teAE5swtxAHj8Ij3MgS4sQhfJj0hhfBerW1ReNAMwLzvw_EGbWq3Yk1wbWNbMXUQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+
+</html>
